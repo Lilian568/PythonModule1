@@ -92,7 +92,7 @@ while attempts < 5:
 if attempts >= 5:
     print ("Access denied. you have reached the maximum numbers of login attempts.")
 
-#Ex4.5
+#Ex4.6
 point_N = int(input("How many random points to generate? "))
 point_n = 0
 point_generated = 1
