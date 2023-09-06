@@ -106,3 +106,4 @@ while point_generated <= point_N:
     pi = 4 * point_n / point_N
     print (f"Approximate value of Pi:{pi}")
 
+
