@@ -91,3 +91,18 @@ while attempts < 5:
         attempts +=1
 if attempts >= 5:
     print ("Access denied. you have reached the maximum numbers of login attempts.")
+
+#Ex4.5
+point_N = int(input("How many random points to generate? "))
+point_n = 0
+point_generated = 1
+while point_generated <= point_N:
+    random_x = random.uniform(-1,1)
+    random_y = random.uniform(-1, 1)
+    point_generated +=1
+    equation_check = random_x * random_x + random_y * random_y
+    if equation_check <1:
+        point_n +=1
+    pi = 4 * point_n / point_N
+    print (f"Approximate value of Pi:{pi}")
+
