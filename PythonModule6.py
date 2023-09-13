@@ -1,6 +1,6 @@
 import random
 import math
-"""
+
 #Ex6.1
 def roll_dice():
     return random.randint(1, 6)
@@ -52,7 +52,7 @@ def sum_of_number(list):
     return total
 if __name__ == "__main__":
     list_of_integer = (1,2,3,4,5,6,7,8,9,10)
-    result = sum_of_number(integer_list)
+    result = sum_of_number(list_of_integer)
     print(f"The sum of list of integer is:{result}")
     
     
@@ -68,7 +68,7 @@ if __name__ == "__main__":
     even_list = remove_odd_numbers(integer_list)
     print("Original list:", integer_list)
     print("Cut down list(even numbers only):", even_list)
-"""
+
 #Ex6.6
 def calculate_unit_price(diameter_cm, price_euros):
     diameter_m = diameter_cm / 100
