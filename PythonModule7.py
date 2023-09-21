@@ -1,16 +1,20 @@
 #Ex7.1
-seasons = ('Winter', 'Spring', 'Summer', 'Autumn')
-try:
-    month_number = int(input("Enter a month number: "))
-except ValueError:
-    print("Invalid input. Pleas enter a valid number: ")
-    exit()
-if 1 <= month_number <= 12:
-    season_index = (month_number - 1) //3
-    season = seasons [season_index]
-    print(f"The season for month {month_number} is {season}.")
-else:
-    print("Invalid number. Please enter a valid month number. ")
+seasons = ("Winter", "Spring", "Summer", " Fall")
+month = int(input("enter a number of month: "))
+def season_in_year():
+    for number in seasons:
+        if month == 12 or 1<= month <= 2:
+            return seasons[0]
+        elif 3 <= month <= 5:
+            return seasons[1]
+        elif 6 <= month <= 8:
+            return seasons[2]
+        elif 9 <= month <= 11:
+            return seasons[3]
+        else:
+            print("Invalid number")
+season_in_year()
+print(f"month {month} is {season_in_year()}")
 
 #Ex7.2
 names_set = set()

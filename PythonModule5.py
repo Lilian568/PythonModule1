@@ -1,4 +1,4 @@
-
+"""
 #Ex5.1
 import random
 num_dice = int(input("How many dice would you want to roll? "))
@@ -20,7 +20,7 @@ while True:
     try:
         number = float(user_input)
         numbers.append(number)
-    except valueerror:
+    except ValueError:
         print("Invalid input.please enter a valid number.")
 if len(numbers) >=5:
     numbers.sort(reverse=True)
@@ -31,18 +31,40 @@ else:
     print("you entered less than five numbers, so there are not enough to display.")
 
 #Ex5.3
-num = int(input("Enter a number: "))
-prime = True
-if num ==1:
-    print ("This is not a prime number")
-else:
-    for i in range(2,num):
-        if num % i ==0:
-            print("This is not a prime number.")
-            break
-    if prime == True:
-        print("This is a prime number.")
+list_number = [2,3,5,7,9]
 
+def print_list(list_example):
+    print("here is the list")
+    for element in list_example:
+        print(f"{element}")
+    return
+print("here is the list")
+"""
+
+
+list_num = [2,3,4,5]
+check_num =8
+
+def is_prime_number(number_to_check, list_of_number):
+    for number in list_of_number:
+        remaining_value = number_to_check % number
+        if remaining_value == 0:
+            print(f"{number_to_check} is not a prime number")
+            break
+        else:
+            print(f"{number_to_check}/{number} remaning {remaining_value} ")
+    else:
+        print(f"{number_to_check} is a prime number")
+    return
+is_prime_number(check_num, list_num)
+
+
+
+
+        
+
+
+"""
 # Ex5.4
 cities = []
 for i in range(5):
@@ -51,4 +73,4 @@ for i in range(5):
 print("Cities you entered: ")
 for city in cities:
     print(city)
-
+"""
