@@ -13,30 +13,22 @@ while number <= 1000:
 #Ex4.2
 #Convert factor from inches to centimeters
 inches_to_cm = 2.54
-#show the input value to a positive number
 inches = 0
-#repeat a while loop until the user inputs a negative number
 while inches >= 0:
-    try:
-        #prompt the user for input
-        inches = float(input("enter a length in inches"))
-        if inches >0:
-            #convert inches to centimeters and show the results
-            centimeters = inches * inches_to_cm
-            print(f"{inches}inches is equal to {centimeters} centimeters")
-        else:
-            print ('exiting the program.')
-    except ValueError:
-        print("Invalid input. please enter a valid number.")
-print("program ended.")
+    inches = float(input("Enter a length in inches"))
+    if inches > 0:
+        centimeters = inches * inches_to_cm
+        print(f"{inches} inches is equal to {centimeters} centimeters")
+    else:
+        print("exit the program")
 
-#Ex4.3
+#Ex4.2
 smallest = None
 largest = None
 
 # Use a while loop to continuously ask for input
 while True:
-    user_input = input("Enter a number (or press Enter to quit): ")
+    user_input = input("Enter a number: ")
 
     # Check if the user input is empty
     if user_input == "":
