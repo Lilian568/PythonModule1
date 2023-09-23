@@ -81,33 +81,3 @@ diameter1 = float(input("Enter the diameter of the first pizza: "))
 price1 = float(input("Enter the price of the first pizza"))
 diameter2 = float(input("Enter the diameter of the second pizza: "))
 price2 = float(input("Enter the price of the second pizza: "))
-
-
-
-def roll_dice():
-    return random.randint(1, 6)
-def main():
-    rolls = 0
-    while True:
-        result = roll_dice()
-        rolls += 1
-        print(f"roll {rolls}: {result}")
-        if result == 6:
-            break
-if __name__ == "__main__":
-    main()
-
-
-def roll_dice(sides):
-    return random.randint(1, sides)
-def main():
-    max_sides = int(input("Enter the maximum number of sides on the dice:"))
-    rolls = 0
-    while True:
-        result = roll_dice(max_sides)
-        rolls += 1
-        print(f"Roll {rolls}:{result}")
-        if result ==max_sides:
-            break
-if __name__ == "__main__":
-    main()
