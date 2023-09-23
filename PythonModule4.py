@@ -1,17 +1,11 @@
 #Ex4.1
-#Initialize a variable to start from 1
 number = 1
-# Use the while loop to iterate through numbers from 1 to 1000
 while number <= 1000:
-    #check if the number is divisible by 3
     if number % 3 == 0:
-        #Print the number if divisible by 3
         print(number)
-    #Increment the number
     number += 1
 
 #Ex4.2
-#Convert factor from inches to centimeters
 inches_to_cm = 2.54
 inches = 0
 while inches >= 0:
@@ -25,19 +19,13 @@ while inches >= 0:
 #Ex4.2
 smallest = None
 largest = None
-
-# Use a while loop to continuously ask for input
 while True:
     user_input = input("Enter a number: ")
-
-    # Check if the user input is empty
     if user_input == "":
         break
 
     try:
-        # Convert the user input to a float
         number = float(user_input)
-        # Update the smallest and largest numbers
         if smallest is None or number < smallest:
             smallest = number
         if largest is None or number > largest:
@@ -45,7 +33,6 @@ while True:
     except ValueError:
         print("Invalid input. Please enter a valid number.")
 
-# Check if any numbers were entered
 if smallest is not None and largest is not None:
     print(f"Smallest number: {smallest}")
     print(f"Largest number: {largest}")
@@ -57,7 +44,6 @@ import random
 hid_number = random.randint(1,10)
 player_guess = 0
 while not player_guess ==hid_number:
-#while player_guess != hid_number:
     player_guess = int(input("guess the number between 1 and 10:"))
     if player_guess < hid_number:
         print("your number is too low, let's try again.")
@@ -70,9 +56,7 @@ else:
 correct_username = "python"
 correct_password = "rules"
 attempts = 0
-#Use the while loop to start the login
 while attempts < 5:
-    #Request the user for username and password
     username = input("Enter your username: ")
     password = input("enter your password: ")
     if username == correct_username and password == correct_password:

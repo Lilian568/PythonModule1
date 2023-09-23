@@ -1,9 +1,8 @@
-"""
+
 #Ex5.1
 import random
 num_dice = int(input("How many dice would you want to roll? "))
 sum_of_roll = 0
-#Roll the dice and calculate the sum
 for _ in range(num_dice):
     roll = random.randint(1, 6)
     print(f"Rolled:{roll}")
@@ -12,7 +11,6 @@ print (f"Sum of the rolls: {sum_of_roll}")
 
 #Ex5.2
 numbers = []
-#Continue prompting the user for input untill they enter an empty string to quit
 while True:
     user_input = input("Enter a number: ")
     if user_input == "":
@@ -39,7 +37,7 @@ def print_list(list_example):
         print(f"{element}")
     return
 print("here is the list")
-"""
+
 
 
 list_num = [2,3,4,5]
@@ -58,13 +56,6 @@ def is_prime_number(number_to_check, list_of_number):
     return
 is_prime_number(check_num, list_num)
 
-
-
-
-        
-
-
-"""
 # Ex5.4
 cities = []
 for i in range(5):
@@ -73,4 +64,3 @@ for i in range(5):
 print("Cities you entered: ")
 for city in cities:
     print(city)
-"""
