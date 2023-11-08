@@ -70,6 +70,7 @@ class Car:
         self.travelled_distance = 0
 
     def accelerate(self, speed_change):
+        self.current_speed
         if self.current_speed + speed_change < 0:
             self.current_speed = 0
         elif self.current_speed + speed_change > self.maximum_speed:
