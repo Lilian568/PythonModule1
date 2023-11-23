@@ -7,7 +7,7 @@ try:
         password='Giakhang2018@',
         database='flight_game',
     )
-except _mysql_connector.Error as e:
+except _mysql_connector.error as e:
     print(f"Error connecting to MAriaDB failed: {e}")
     exit(1)
 cursor = connection.cursor()
